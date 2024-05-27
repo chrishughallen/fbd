@@ -533,113 +533,334 @@ const definitions = [
     definition: "avoir la connaissance de quelque chose", 
     englishWord: "to know", 
     englishDef: "to have knowledge of something" 
+  },
+  { 
+    word: "amitié", 
+    definition: "sentiment d'affection entre deux personnes", 
+    englishWord: "friendship", 
+    englishDef: "feeling of affection between two people" 
+  },
+  { 
+    word: "animal", 
+    definition: "être vivant doué de sensibilité", 
+    englishWord: "animal", 
+    englishDef: "living being with sensitivity" 
+  },
+  { 
+    word: "argent", 
+    definition: "métal précieux ou monnaie", 
+    englishWord: "silver", 
+    englishDef: "precious metal or currency" 
+  },
+  { 
+    word: "balcon", 
+    definition: "plateforme extérieure", 
+    englishWord: "balcony", 
+    englishDef: "external platform" 
+  },
+  { 
+    word: "bateau", 
+    definition: "moyen de transport sur l'eau", 
+    englishWord: "boat", 
+    englishDef: "means of transportation on water" 
+  },
+  { 
+    word: "boulangerie", 
+    definition: "lieu où l'on fait du pain", 
+    englishWord: "bakery", 
+    englishDef: "place where bread is made" 
+  },
+  { 
+    word: "bureau", 
+    definition: "pièce où l'on travaille", 
+    englishWord: "office", 
+    englishDef: "room where one works" 
+  },
+  { 
+    word: "cadeau", 
+    definition: "objet offert", 
+    englishWord: "gift", 
+    englishDef: "offered object" 
+  },
+  { 
+    word: "café", 
+    definition: "boisson noire et amère", 
+    englishWord: "coffee", 
+    englishDef: "black and bitter drink" 
+  },
+  { 
+    word: "cheval", 
+    definition: "grand mammifère herbivore", 
+    englishWord: "horse", 
+    englishDef: "large herbivorous mammal" 
+  },
+  { 
+    word: "chemin", 
+    definition: "voie de passage", 
+    englishWord: "path", 
+    englishDef: "passageway" 
+  },
+  { 
+    word: "cœur", 
+    definition: "organe qui pompe le sang", 
+    englishWord: "heart", 
+    englishDef: "organ that pumps blood" 
+  },
+  { 
+    word: "crayon", 
+    definition: "outil pour écrire ou dessiner", 
+    englishWord: "pencil", 
+    englishDef: "tool for writing or drawing" 
+  },
+  { 
+    word: "désert", 
+    definition: "région aride", 
+    englishWord: "desert", 
+    englishDef: "arid region" 
+  },
+  { 
+    word: "docteur", 
+    definition: "personne qui exerce la médecine", 
+    englishWord: "doctor", 
+    englishDef: "person who practices medicine" 
+  },
+  { 
+    word: "église", 
+    definition: "bâtiment pour le culte chrétien", 
+    englishWord: "church", 
+    englishDef: "building for Christian worship" 
+  },
+  { 
+    word: "étoile", 
+    definition: "astre qui brille dans le ciel", 
+    englishWord: "star", 
+    englishDef: "celestial body that shines in the sky" 
+  },
+  { 
+    word: "fête", 
+    definition: "célébration", 
+    englishWord: "party", 
+    englishDef: "celebration" 
+  },
+  { 
+    word: "forêt", 
+    definition: "grande étendue boisée", 
+    englishWord: "forest", 
+    englishDef: "large wooded area" 
+  },
+  { 
+    word: "glace", 
+    definition: "eau congelée", 
+    englishWord: "ice", 
+    englishDef: "frozen water" 
+  },
+  { 
+    word: "gâteau", 
+    definition: "pâtisserie sucrée", 
+    englishWord: "cake", 
+    englishDef: "sweet pastry" 
+  },
+  { 
+    word: "hôpital", 
+    definition: "établissement de soins médicaux", 
+    englishWord: "hospital", 
+    englishDef: "medical care facility" 
+  },
+  { 
+    word: "île", 
+    definition: "étendue de terre entourée d'eau", 
+    englishWord: "island", 
+    englishDef: "land surrounded by water" 
+  },
+  { 
+    word: "jardin", 
+    definition: "terrain où l'on cultive des plantes", 
+    englishWord: "garden", 
+    englishDef: "land where plants are cultivated" 
+  },
+  { 
+    word: "jouet", 
+    definition: "objet pour jouer", 
+    englishWord: "toy", 
+    englishDef: "object to play with" 
+  },
+  { 
+    word: "lampe", 
+    definition: "appareil qui éclaire", 
+    englishWord: "lamp", 
+    englishDef: "device that illuminates" 
+  },
+  { 
+    word: "montagne", 
+    definition: "relief élevé", 
+    englishWord: "mountain", 
+    englishDef: "elevated terrain" 
+  },
+  { 
+    word: "musée", 
+    definition: "lieu où l'on expose des œuvres d'art", 
+    englishWord: "museum", 
+    englishDef: "place where art is exhibited" 
+  },
+  { 
+    word: "neige", 
+    definition: "précipitation blanche et froide", 
+    englishWord: "snow", 
+    englishDef: "white and cold precipitation" 
+  },
+  { 
+    word: "oiseau", 
+    definition: "animal qui vole", 
+    englishWord: "bird", 
+    englishDef: "animal that flies" 
+  },
+  { 
+    word: "pain", 
+    definition: "aliment de base fait de farine", 
+    englishWord: "bread", 
+    englishDef: "staple food made from flour" 
+  },
+  { 
+    word: "poule", 
+    definition: "oiseau domestique", 
+    englishWord: "chicken", 
+    englishDef: "domestic bird" 
+  },
+  { 
+    word: "quartier", 
+    definition: "partie d'une ville", 
+    englishWord: "neighborhood", 
+    englishDef: "part of a city" 
+  },
+  { 
+    word: "rivière", 
+    definition: "cours d'eau", 
+    englishWord: "river", 
+    englishDef: "watercourse" 
+  },
+  { 
+    word: "salle", 
+    definition: "pièce dans un bâtiment", 
+    englishWord: "room", 
+    englishDef: "space in a building" 
+  },
+  { 
+    word: "savon", 
+    definition: "produit pour se laver", 
+    englishWord: "soap", 
+    englishDef: "product for washing" 
+  },
+  { 
+    word: "souris", 
+    definition: "petit rongeur", 
+    englishWord: "mouse", 
+    englishDef: "small rodent" 
+  },
+  { 
+    word: "table", 
+    definition: "meuble sur lequel on mange ou travaille", 
+    englishWord: "table", 
+    englishDef: "furniture on which one eats or works" 
+  },
+  { 
+    word: "train", 
+    definition: "moyen de transport ferroviaire", 
+    englishWord: "train", 
+    englishDef: "rail transport" 
+  },
+  { 
+    word: "vache", 
+    definition: "grand mammifère domestique", 
+    englishWord: "cow", 
+    englishDef: "large domestic mammal" 
+  },
+  { 
+    word: "valise", 
+    definition: "bagage pour voyager", 
+    englishWord: "suitcase", 
+    englishDef: "luggage for traveling" 
   }
 ]
 
-
 let index
 let current
-// ON PAGE LOAD
-// Assign a random number to current index variable
-// assign current question variable
-// create the div and render the definition
-
-const initialize = () => {
-  updateScore()
-  index = Math.floor(Math.random() * definitions.length)
-  current = definitions[index]
-  console.log(current)
-  let div = document.createElement("div")
-  div.innerHTML = current.definition
-  definition.prepend(div)
-}
-
-// WHEN GUESSED
-// check if input is equal to current.word
-// if yes alert "correct"
-// add currentIndes to correct_answers array
-// change currentIndex to something that is not in correct_answers array
-// update html to show new definition
-
-// if no alert "wrong"
-
-// WHEN SKIPPED
-  // ALERT correct word
-  //change currentIndex
-  // update html to show new definition
-
-
 let correctWords = []
 
+
+// display divs
 const definition = document.getElementById("definition")
+const score_element = document.getElementById("score")
+const show = document.getElementById("show")
+const word = document.getElementById("word")
+
+// inputs
 const input = document.getElementById("input")
 const submit = document.getElementById("submit")
 const skip = document.getElementById("skip")
-const translateDef = document.getElementById("translateDef")
-const translateToggle = document.getElementById("translateToggle")
-const score_element = document.getElementById("score")
-const show = document.getElementById("show")
-translateToggle.addEventListener('change', (e) => toggleTranslation(e))
-,
+const wordToggle = document.getElementById("wordToggle")
 
-
+// Event listeners
+wordToggle.addEventListener('change', (e) => toggleWord(e) )
 submit.addEventListener("click", () => checkGuess())
-skip.addEventListener("click", () => giveUp())
-show.addEventListener("click", () => showWord())
+skip.addEventListener("click", () => reInitialize())
+show.addEventListener("click", (e) => toggleWord(e))
 input.addEventListener("keypress", (e) => {
   if(e.key == "Enter") {
     checkGuess()
   }
 })
 
-const showWord = () => {
-  alert(current.word)
-}
 
-const toggleTranslation = (e) => {
-  if(e.currentTarget.checked) {
-    definition.innerHTML = current.englishDef
-    translateToggle.nextElementSibling.innerText = "Français"
-  } else {
-    definition.innerHTML = current.definition
-    translateToggle.nextElementSibling.innerText = "English"
-  }
-}
-
-const giveUp = () => {
-  reInitialize()
-}
-
-
-
-const translateDefinition = () => {
-  console.log(current.englishDef)
+// Functions
+const initialize = () => {
+  updateScore()
+  index = Math.floor(Math.random() * definitions.length)
+  current = definitions[index]
+  renderNewDefinition(current)
 }
 
 const reInitialize = () => {
   // get a new index but make sure it isn't already in correctWords array
   index = Math.floor(Math.random() * definitions.length)
-  // also make sure not all the words are in correctWords
+  // also make sure not all the words are in correctWords otherwise game is over
   if(correctWords.includes(index) && correctWords.length < definitions.length) {
     return reInitialize()
   } else if(correctWords.length == definitions.length) {
+    // GAME OVER
     alert("YOU BEAT THE GAME")
     return false
   } else {
-    // reassign current to the new random number that wasn't in the correctWords array
+    // new definition
     current = definitions[index]
-    definition.innerText = current.definition
-    input.value = ""
+    renderNewDefinition(current)
   }
   updateScore()
 }
+
+const renderNewDefinition = (def) => {
+  definition.innerText = def.definition
+  input.value = ""
+  word.innerHTML = ""
+  show.innerText = "montrer"
+}
+
 
 const updateScore = () => {
   score_element.innerHTML = `${correctWords.length} / ${definitions.length}`
 }
 
+const toggleWord = (e) => {
+  if(e.currentTarget.checked)  {
+    word.innerHTML = current.word
+    wordToggle.nextElementSibling.innerText = "cacher"
+  } else {
+    word.innerHTML = ""
+    wordToggle.nextElementSibling.innerText = "montrer"
+  }
+}
+
 const checkGuess = () => {
-  if(input.value.toLowerCase() == current.word) {
+  if(input.value.toLowerCase().trim() == current.word) {
     alert("CORRECT!")
     correctWords.push(index)
     reInitialize()
