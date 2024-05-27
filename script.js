@@ -800,15 +800,32 @@ const skip = document.getElementById("skip")
 const wordToggle = document.getElementById("wordToggle")
 
 // Event listeners
-wordToggle.addEventListener('change', (e) => toggleWord(e) )
-submit.addEventListener("click", () => checkGuess())
-skip.addEventListener("click", () => reInitialize())
-show.addEventListener("click", (e) => toggleWord(e))
+wordToggle.addEventListener('click', (e) => showWord())
+submit.addEventListener("click", () => continueGame())
+skip.addEventListener("click", () => continueGame())
+
 input.addEventListener("keypress", (e) => {
   if(e.key == "Enter") {
-    checkGuess()
+    if(checkGuess(e.currentTarget.value)) {
+      continueGame()
+    } else {
+      checkGuess(e.currentTarget.value)
+    }
   }
 })
+
+input.addEventListener("keyup", (e) => {
+  if(checkGuess(e.currentTarget.value)) {
+    submit.classList.remove('d-none')
+    wordToggle.classList.add('d-none')
+    skip.classList.add('d-none')
+  } else {
+    submit.classList.add('d-none')
+    wordToggle.classList.remove('d-none')
+    skip.classList.remove('d-none')
+  }
+})
+
 
 
 // Functions
@@ -840,8 +857,10 @@ const reInitialize = () => {
 const renderNewDefinition = (def) => {
   definition.innerText = def.definition
   input.value = ""
-  word.innerHTML = ""
-  show.innerText = "montrer"
+  input.classList.remove('d-none')
+  wordToggle.classList.remove('d-none')
+  submit.classList.add('d-none')
+  skip.classList.remove('d-none')
 }
 
 
@@ -849,24 +868,29 @@ const updateScore = () => {
   score_element.innerHTML = `${correctWords.length} / ${definitions.length}`
 }
 
-const toggleWord = (e) => {
-  if(e.currentTarget.checked)  {
-    word.innerHTML = current.word
-    wordToggle.nextElementSibling.innerText = "cacher"
-  } else {
-    word.innerHTML = ""
-    wordToggle.nextElementSibling.innerText = "montrer"
-  }
+const showWord = () => {
+  let wordDiv = document.createElement("div")
+  wordDiv.innerHTML = current.word
+  wordDiv.className = "lead fs-3 ps-2"
+  definition.appendChild(wordDiv)
+  hideInput()
 }
 
-const checkGuess = () => {
-  if(input.value.toLowerCase().trim() == current.word) {
-    alert("CORRECT!")
+const hideInput = () => {
+  // add d-none class to the input
+  input.classList.add('d-none')
+  wordToggle.classList.add('d-none')
+}
+
+const checkGuess = (input) => {
+  return input.toLowerCase().trim() == current.word
+}
+
+const continueGame = () => {
+  if(checkGuess(input.value.toLowerCase().trim())) {
     correctWords.push(index)
-    reInitialize()
-  } else {
-    alert("NO! try again or skip it")
   }
+  reInitialize()
 }
 
 window.onLoad = initialize()
