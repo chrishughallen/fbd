@@ -857,7 +857,7 @@ const reInitialize = () => {
 const renderNewDefinition = (def) => {
   definition.innerText = def.definition
   input.value = ""
-  input.classList.remove('d-none')
+  input.classList.remove('invisible')
   wordToggle.classList.remove('d-none')
   submit.classList.add('d-none')
   skip.classList.remove('d-none')
@@ -871,14 +871,14 @@ const updateScore = () => {
 const showWord = () => {
   let wordDiv = document.createElement("div")
   wordDiv.innerHTML = current.word
-  wordDiv.className = "lead fs-3 ps-2"
+  wordDiv.className = "lead fs-3"
   definition.appendChild(wordDiv)
   hideInput()
 }
 
 const hideInput = () => {
   // add d-none class to the input
-  input.classList.add('d-none')
+  input.classList.add('invisible')
   wordToggle.classList.add('d-none')
 }
 
